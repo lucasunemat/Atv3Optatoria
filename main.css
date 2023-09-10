@@ -1,0 +1,322 @@
+/*editar tamanho do icone do alien*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Righteous&family=Roboto:ital,wght@0,400;1,100&family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.cabecalho {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+}
+
+.cabecalho h1 {
+    font: 1.5vw;
+    font-family: 'Righteous', cursive;
+    color: #00ff00be;
+}
+
+.cabecalho-botao-login {
+    width: 120px;
+    height: 40px;
+    background-color: #00ff00be;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.cabecalho-botao-login:hover {
+    background-color: #7bf47b;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.barra-navegacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    border-top: 1px solid #fff;
+}
+
+.barra-navegacao-lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.barra-navegacao-lista li {
+    display: flex;
+    padding: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px 90px 0px 90px;
+}
+
+.barra-navegacao-lista li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3vw;
+    padding: 10px;
+    list-style: none;
+    margin: 0px 10px 0px 10px;
+    font-family: 'Righteous', cursive;
+}
+
+.barra-navegacao-lista li a:hover {
+    color: #BD93F9;
+}
+
+/* Estilize o submenu de Contato */
+.submenu-produto {
+    display: none;
+    position: absolute;
+    margin-top: 190px;
+    background-color: #333;
+    padding: 1px;
+    border: 0.3px solid #fff;
+    border-radius: 5px;
+    width: 25vw;
+}
+
+.menu-produto:hover .submenu-produto {
+    display: block;
+}
+
+.submenu-produto li {
+    margin: 5px 0;
+}
+
+.submenu-produto a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu-produto a:hover {
+    text-decoration: underline;
+}
+
+/*estilizando menu sobre*/
+
+.menu-sobre{
+    position: relative;
+}
+
+.submenu-sobre {
+    display: none;
+    position: absolute;
+    margin-top: 170px;
+    background-color: #333;
+    padding: 1px;
+    border: 0.3px solid #fff;
+    border-radius: 5px;
+    width: 28vw;
+}
+
+.submenu-sobre li{
+    font-family: 'Righteous', cursive;
+    font-size: 1.3vw;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-sobre:hover .submenu-sobre{    
+    display: block;
+}
+
+.submenu-sobre a:hover {
+    text-decoration: underline;
+}
+
+.quem-somos {
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.quem-somos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+}
+
+.quem-somos-container h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.8vw;
+    color: #BD93F9;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.quem-somos-container p {
+    font-family: 'Sarala', sans-serif;
+    font-size: 1.5vw;
+    color: #fff;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.quem-somos-imagem {
+    width: 35vw;
+    border-radius: 10px;
+}
+
+.o-que-podemos-fazer-por-voce {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.o-que-podemos-fazer-por-voce-imagem {
+    width: 30vw;
+    border-radius: 10px;
+}
+
+.o-que-podemos-fazer-por-voce-container {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    align-items: center;
+}
+
+.o-que-podemos-fazer-por-voce-container h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.8vw;
+    color: #BD93F9;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.o-que-podemos-fazer-por-voce-container p {
+    font-family: 'Sarala', sans-serif;
+    font-size: 1.2vw;
+    color: #fff;
+    text-align: center;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    gap: 20px;
+}
+
+.cta-container h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.8vw;
+    color: #BD93F9;
+    text-align: center;
+    width: max-content;
+}
+
+.cta-container button {
+    width: 200px;
+    height: 40px;
+    background-color: #00ff00be;
+    font-weight: 700;
+    font-size: 1vw;
+    color: #FFF;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cta-container button:hover {
+    background-color: #7bf47b;
+    color: #000;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 60px 150px 25px 150px;
+    border-top: 1px solid #fff;
+}
+
+.rodape-info-adicional {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.rodape-info-adicional p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    color: #fff;
+    text-align: justify;
+}
+
+.rodape-info-redes-sociais {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape-info-redes-sociais p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    color: #fff;
+    text-align: justify;
+}
+
+.rodape-info-redes-sociais span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rodape-info-redes-sociais .linkedin {
+    width: 30px;
+    height: 30px;
+}
+
+.rodape-info-redes-sociais .instagram {
+    width: 65px;
+    height: 65px;
+}
